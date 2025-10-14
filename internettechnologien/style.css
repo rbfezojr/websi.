@@ -1,0 +1,18 @@
+body{
+  background: linear-gradient(135deg, #f0f3f5, #e8eef2);
+  font-family:'Times New Roman';
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  width: 1400px;
+  height: 800px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);;
+}

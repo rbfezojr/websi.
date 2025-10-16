@@ -32,7 +32,7 @@ body{
 }
 
 .profilbildcontainer{
-  display: flex;
+  display: relative;
   flex-direction: column;
   width: 400px;
   height: 800px;
@@ -40,7 +40,6 @@ body{
   border-radius: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);;
   text-align: center;
-  
 }
 
 .profilbild{
@@ -96,5 +95,54 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: whitesmoke;
 
+  cursor: pointer;
 }
+
+.button-open:hover{
+  background-color: grey;
+}
+
+.pop-up {
+  display: block;
+  opacity: 0; /*unsichtbar*/
+  pointer-events: none;
+  position: absolute;
+  bottom: 15%;
+  left: 24.7%;
+  transform: translate(-50%);
+  background-color: rgb(27, 27, 27);
+  height: 200px;
+  width: 250px;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgb(119, 116, 116);
+  z-index: 10;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 30px; /*abstand rand*/
+  padding-left: 5px;
+  box-sizing: border-box; /*sonst wird box einf größer von padding*/
+  transition: opacity 0.3s ease;
+}
+
+.pop-up.show{
+  display: block;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.pop-up .button-close{
+  position: absolute;
+  top: 80%;
+  right: 33%;
+  transform: translate(-50%);
+  background-color: rgb(233, 223, 223);
+  border: 1px solid whitesmoke;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button-close:hover{
+  background-color: grey;
+}
+
 

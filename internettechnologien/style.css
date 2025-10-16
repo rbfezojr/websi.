@@ -89,7 +89,7 @@ body{
   background-color: rgb(51, 51, 51);
   border-radius: 3vh;
   border: 0.1vh solid white;
-  box-shadow: 0px 0.5vh 0.3vh -0.2vh rgb(26, 25, 25);
+  box-shadow: 0vh 0.5vh 0.3vh -0.2vh rgb(26, 25, 25);
 
   font-size: 2vh;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -117,6 +117,7 @@ body{
   box-shadow: 0 0 1vh rgb(119, 116, 116);
   z-index: 10; /*vordergrund layer*/
   text-align: left;
+  font-size: 120%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-top: 3vh; /*abstand rand*/
   padding-left: 1vh;
@@ -132,15 +133,23 @@ body{
 
 .pop-up .button-close{
   position: absolute;
+  height: 3vh;
+  width: 5vw;
   top: 80%;
-  right: 38%;
+  right: 26%;
   transform: translate(-50%);
   background-color: rgb(233, 223, 223);
   border: 0.1vh solid whitesmoke;
   border-radius: 3vh;
   cursor: pointer;
+  box-shadow: 0vh 0.5vh 0.3vh -0.2vh rgb(0, 0, 0);
 }
 
 .button-close:hover{
   background-color: grey;
+}
+
+.profilbildcontainer a{
+  color: white;
+  text-decoration: none;
 }

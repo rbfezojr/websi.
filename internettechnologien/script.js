@@ -9,3 +9,11 @@ open.addEventListener("click", ()=>{
 close.addEventListener("click", ()=>{
     pop_up.classList.remove("show");
 });
+
+function changePage(pageNumber) {
+    const allPages=document.querySelectorAll(".page");
+    allPages.forEach(page => page.classList.remove("active"));
+
+    const newPage=document.getElementById("page" + pageNumber);
+    if(newPage) newPage.classList.add("active");
+}
